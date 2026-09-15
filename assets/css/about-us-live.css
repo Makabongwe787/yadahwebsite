@@ -1,0 +1,488 @@
+/**
+ * Yadah Technologies - About Us Page Styling (Live Website Version)
+ */
+
+/* ============================================
+   Breadcrumb Section
+   ============================================ */
+.breadcrumb-section {
+  background-color: #f9f9f9;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #757575;
+}
+
+.breadcrumb a {
+  color: #2e6ed5;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* ============================================
+   Main Container
+   ============================================ */
+.main-container.about-page {
+  background-color: #ffffff;
+}
+
+.about-container {
+  padding: 0;
+}
+
+/* ============================================
+   About Hero Image
+   ============================================ */
+.about-hero-image {
+  padding: 60px 0 40px 0;
+  background-color: #ffffff;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* ============================================
+   Section Images
+   ============================================ */
+.section-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Keys section: force full-width centered images */
+.keys-section .section-image {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .keys-section .section-image {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+
+/* ============================================
+   Carousel/Image Slider
+   ============================================ */
+.carousel-placeholder {
+  padding: 20px 0;
+}
+
+.image-slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+.slider-item.active {
+  opacity: 1;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Navigation Buttons */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(1, 86, 153, 0.7);
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.slider-nav:hover {
+  background-color: rgba(1, 86, 153, 0.95);
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
+
+/* Slider Dots */
+.slider-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.dot.active {
+  background-color: #ffffff;
+  border-color: #015699;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   About Sections - General
+   ============================================ */
+.about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.section-heading {
+  font-size: 45px;
+  color: #015699;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.section-heading.heading-white {
+  color: #ffffff;
+}
+
+.section-separator {
+  width: 100px;
+  height: 4px;
+  background-color: #015699;
+  margin: 0 auto 40px auto;
+}
+
+.section-separator.separator-white {
+  background-color: #ffffff;
+}
+
+.section-content-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18pt;
+  color: #000000;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.section-content-text p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.section-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+.section-content-text.text-white {
+  color: #ffffff;
+}
+
+.section-content-text.text-white p {
+  color: #ffffff;
+}
+
+/* ============================================
+   Mission Section
+   ============================================ */
+.mission-section {
+  background-color: #015699;
+  padding: 80px 0;
+}
+
+.mission-section .section-content-text {
+  font-size: 24pt;
+  text-align: center;
+}
+
+/* ============================================
+   Two Column Layout
+   ============================================ */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+/* ============================================
+   Who We Are Section
+   ============================================ */
+.who-we-are-section {
+  background-color: #ffffff;
+}
+
+.who-we-are-section .left-column {
+  padding-top: 60px;
+}
+
+.who-we-are-section .right-column {
+  padding-top: 40px;
+}
+
+/* ============================================
+   What We Do Section
+   ============================================ */
+.what-we-do-section {
+  background-color: #ffffff;
+}
+
+.services-list {
+  margin-top: 30px;
+}
+
+.service-item {
+  font-size: 18pt;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.service-item:before {
+  content: '';
+  margin-right: 10px;
+}
+
+.carousel-placeholder {
+  padding: 20px 0;
+}
+
+/* ============================================
+   Values Section
+   ============================================ */
+.values-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.values-section .image-placeholder {
+  max-width: 100%;
+}
+
+/* ============================================
+   Technical Ability Section
+   ============================================ */
+.technical-ability-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.technical-ability-section .right-column {
+  padding-left: 40px;
+}
+
+/* ============================================
+   Organogram Section
+   ============================================ */
+.organogram-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.organogram-section .container {
+  max-width: 1100px;
+}
+
+/* ============================================
+   Tagline Section
+   ============================================ */
+.tagline-section {
+  background-color: #015699;
+  padding: 80px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tagline-text {
+  font-size: 30pt;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 1024px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .right-column {
+    padding-left: 0 !important;
+  }
+
+  .left-column {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .section-content-text {
+    font-size: 16pt;
+  }
+
+  .service-item {
+    font-size: 16pt;
+  }
+
+  .mission-section {
+    padding: 60px 0;
+  }
+
+  .mission-section .section-content-text {
+    font-size: 20pt;
+  }
+
+  .technical-ability-section {
+    padding: 60px 0;
+  }
+
+  .organogram-section {
+    padding: 60px 0;
+  }
+
+  .tagline-section {
+    padding: 60px 0;
+  }
+
+  .tagline-text {
+    font-size: 24pt;
+  }
+
+  .two-column-layout {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 0;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .section-separator {
+    width: 80px;
+    margin-bottom: 30px;
+  }
+
+  .section-content-text {
+    font-size: 14pt;
+  }
+
+  .service-item {
+    font-size: 14pt;
+  }
+
+  .mission-section {
+    padding: 40px 0;
+  }
+
+  .mission-section .section-content-text {
+    font-size: 18pt;
+  }
+
+  .tagline-section {
+    padding: 40px 0;
+  }
+
+  .tagline-text {
+    font-size: 18pt;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .image-placeholder {
+    height: 250px !important;
+  }
+}

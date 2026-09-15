@@ -1,0 +1,412 @@
+/**
+ * Yadah Technologies - Services Page Styling
+ */
+
+/* ============================================
+   Breadcrumb Section
+   ============================================ */
+.breadcrumb-section {
+  background-color: #f9f9f9;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #757575;
+}
+
+.breadcrumb a {
+  color: #2e6ed5;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* ============================================
+   Main Container
+   ============================================ */
+.main-container.services-page {
+  background-color: #ffffff;
+}
+
+.services-container {
+  padding: 0;
+}
+
+/* ============================================
+   Services Hero Image
+   ============================================ */
+.services-hero-image {
+  padding: 60px 0 40px 0;
+  background-color: #ffffff;
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* ============================================
+   Services Sections - General
+   ============================================ */
+.services-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.services-section.service-item {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.services-section.service-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Alternate layout for reversed columns */
+.service-content-layout.alternate-layout {
+  flex-direction: row-reverse;
+}
+
+.section-heading {
+  font-size: 45px;
+  color: #015699;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.section-separator {
+  width: 100px;
+  height: 4px;
+  background-color: #015699;
+  margin: 0 auto 40px auto;
+}
+
+.section-content-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18pt;
+  color: #000000;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.section-content-text p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.section-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   Service Content Layout
+   ============================================ */
+.service-content-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+}
+
+.service-content-layout.alternate-layout {
+  flex-direction: row-reverse;
+}
+
+.service-text-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.service-image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.service-title {
+  font-size: 40px;
+  color: #015699;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.service-description {
+  max-width: 100%;
+}
+
+.service-description p {
+  font-size: 14pt;
+  color: #000000;
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.service-subtitle {
+  font-size: 18pt;
+  color: #015699;
+  text-decoration: underline;
+  margin: 30px 0 15px 0;
+  font-weight: bold;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  font-size: 14pt;
+  color: #000000;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.service-list li:before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: #015699;
+  font-size: 12pt;
+}
+
+/* ============================================
+   Image Placeholder
+   ============================================ */
+.service-image-placeholder {
+  width: 500px;
+  height: 400px;
+  background-color: #e8e8e8;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ============================================
+   Footer Section (Contacts & Payment)
+   ============================================ */
+.footer-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.footer-contact {
+  max-width: 100%;
+}
+
+.footer-contact p {
+  font-size: 14pt;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer-contact-list li {
+  font-size: 14pt;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+.payment-image-placeholder {
+  width: 249px;
+  height: 32px;
+  background-color: #e8e8e8;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+/* ============================================
+   Tagline Section
+   ============================================ */
+.tagline-section {
+  background-color: #1a5c3a;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.tagline-text {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 1024px) {
+  .service-content-layout {
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .service-image-placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .hero-image-placeholder {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 40px 0;
+  }
+
+  .services-section.service-item {
+    padding: 40px 0;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .service-title {
+    font-size: 28px;
+  }
+
+  .section-content-text,
+  .service-description p {
+    font-size: 16pt;
+  }
+
+  .service-subtitle {
+    font-size: 16pt;
+  }
+
+  .service-list li {
+    font-size: 13pt;
+  }
+
+  .service-image-placeholder {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .hero-image-placeholder {
+    height: 200px;
+    font-size: 14px;
+  }
+
+  .payment-image-placeholder {
+    width: 100%;
+    height: auto;
+    min-height: 32px;
+  }
+
+  .tagline-section {
+    padding: 50px 0;
+  }
+
+  .tagline-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 30px 0;
+  }
+
+  .services-section.service-item {
+    padding: 30px 0;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .service-title {
+    font-size: 20px;
+  }
+
+  .section-content-text,
+  .service-description p {
+    font-size: 14pt;
+  }
+
+  .service-subtitle {
+    font-size: 14pt;
+  }
+
+  .service-list li {
+    font-size: 12pt;
+  }
+
+  .section-separator {
+    width: 80px;
+  }
+
+  .tagline-section {
+    padding: 40px 0;
+  }
+
+  .tagline-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,363 @@
+/**
+ * Yadah Technologies - About Us Page Styling
+ */
+
+/* ============================================
+   Breadcrumb Section
+   ============================================ */
+.breadcrumb-section {
+  background-color: #f9f9f9;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #757575;
+}
+
+.breadcrumb a {
+  color: #2e6ed5;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* ============================================
+   About Image Section
+   ============================================ */
+.about-image-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 4px;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+/* ============================================
+   About Intro Section
+   ============================================ */
+.about-intro-section {
+  background-color: #ffffff;
+  padding: 60px 0 80px 0;
+}
+
+.about-intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 42px;
+  color: #2e6ed5;
+  margin: 0 auto 30px auto;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #2e6ed5;
+}
+
+.about-intro {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #363F4D;
+  font-weight: 700;
+  text-align: justify;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+/* ============================================
+   About Sections - Vision, Mission, etc.
+   ============================================ */
+.about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.about-section.alt-bg {
+  background-color: #f5f5f5;
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-text h2 {
+  font-size: 36px;
+  color: #2e6ed5;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.section-text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #363F4D;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.section-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   What We Do - Services List
+   ============================================ */
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.services-list li {
+  font-size: 15px;
+  color: #363F4D;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.services-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e6ed5;
+  font-weight: bold;
+}
+
+/* ============================================
+   Keys For Development Section
+   ============================================ */
+.section-title-center {
+  text-align: center;
+  font-size: 36px;
+  color: #2e6ed5;
+  margin-bottom: 50px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.keys-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.key-item {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.key-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(46, 110, 213, 0.15);
+}
+
+.key-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.key-item p {
+  margin: 0;
+  font-size: 15px;
+  color: #363F4D;
+  font-weight: 500;
+}
+
+/* ============================================
+   Our Values Section
+   ============================================ */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-item {
+  padding: 30px;
+  background-color: #ffffff;
+  border-left: 4px solid #2e6ed5;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+  font-size: 18px;
+  color: #2e6ed5;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.value-item p {
+  font-size: 14px;
+  color: #363F4D;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============================================
+   Tagline Section
+   ============================================ */
+.tagline-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.tagline-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tagline-text {
+  font-size: 24px;
+  color: #2e6ed5;
+  font-weight: 500;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-intro {
+    font-size: 15px;
+  }
+
+  .section-text h2 {
+    font-size: 28px;
+  }
+
+  .section-title-center {
+    font-size: 28px;
+  }
+
+  .services-list ul {
+    grid-template-columns: 1fr;
+  }
+
+  .keys-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tagline-text {
+    font-size: 20px;
+  }
+
+  .about-section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image-section {
+    padding: 20px 0;
+  }
+
+  .about-intro-section {
+    padding: 40px 0 60px 0;
+  }
+
+  .about-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .about-intro {
+    font-size: 14px;
+  }
+
+  .section-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .section-title-center {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .keys-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .key-item {
+    padding: 20px 15px;
+  }
+
+  .key-icon {
+    font-size: 36px;
+  }
+
+  .values-grid {
+    gap: 20px;
+  }
+
+  .value-item {
+    padding: 20px;
+  }
+
+  .tagline-text {
+    font-size: 18px;
+  }
+
+  .about-section {
+    padding: 30px 0;
+  }
+}
+
